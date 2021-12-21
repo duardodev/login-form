@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #101012;
+  color: #f9f9f9;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+main {
+  width: 50vw;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.img-avatar {
+  width: 100px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #8257e6;
+  margin: 1rem 0;
+}
+
+form {
+  width: 350px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.input {
+  background: #1e1f23;
+  color: #f9f9f9;
+  border: 2px solid #1e1f23;
+  outline: none;
+  display: block;
+  padding: 0 2.65rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  transition: border 0.2s ease;
+}
+
+.input:focus {
+  border: 2px solid #8257e6;
+}
+
+.input:focus + i {
+  color: #8257e6;
+}
+
+input[type='email'] {
+  padding: 0 1rem 0 2.65rem;
+}
+
+.fa-envelope {
+  position: absolute;
+  color: #aaa;
+  top: 19px;
+  left: 16px;
+  transition: 0.3s;
+  font-size: 0.875rem;
+}
+
+.fa-lock {
+  position: absolute;
+  color: #aaa;
+  top: 18px;
+  left: 16px;
+  transition: 0.3s;
+  font-size: 0.875rem;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  position: absolute;
+  color: #aaa;
+  top: 20px;
+  right: 16px;
+  transition: 0.3s;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  color: #6647af;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.forgot-password:hover {
+  color: #8257e6;
+}
+
+.btn {
+  display: block;
+  background: #8257e6;
+  color: #f9f9f9;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #a883ff;
+}
+
+.btn-google {
+  background: transparent;
+  color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3f3d56;
+  border-radius: 3px;
+  width: 100%;
+  height: 50px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-google {
+  margin-right: 0.7rem;
+  color: #8257e6;
+}
+
+.btn-google:hover {
+  border: 1px solid #8257e6;
+}
+
+.footer-container {
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1rem;
+}
+
+.footer-container a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6647af;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-container a:hover {
+  color: #8257e6;
+}
+
+.illustration-container {
+  width: 50vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 3.5rem 1.5rem;
+}
+
+.illustration-container img {
+  width: 85%;
+}
+
+.input-box span.error {
+  display: flex;
+  color: #993436;
+  font-size: 0.8rem;
+}
+
+.illustration-container .circle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #e8cbc0, #8257e6);
+  clip-path: circle(40% at right 80%);
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .illustration-container img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 900px) {
+  .illustration-container {
+    display: none;
+    visibility: hidden;
+  }
+
+  main {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 450px) {
+  form {
+    width: 330px;
+  }
+
+  .footer-container {
+    height: 18vh;
+  }
+}
+
+@media (max-width: 350px) {
+  form {
+    width: 300px;
+  }
+}
