@@ -20,7 +20,7 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - CSS;
 - JavaScript;
 
-Utilitários
+Bibliotecas
 
 - [Font Awesome](https://fontawesome.com)
 - [Undraw](https://undraw.co)
